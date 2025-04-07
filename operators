@@ -1,0 +1,25 @@
+package operators;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner input =new Scanner(System.in);
+        int num1;
+        int num2;
+
+
+        System.out.println("ENTER THE VALUE FOR NUM1");
+        num1 =input.nextInt();
+
+        System.out.println("ENTER THE VALUE FOR NUM2");
+        num2=input.nextInt();
+
+        System.out.println("ADDITION:"+(num1 + num2));
+        System.out.println("SUBRACTION:"+(num1 - num2));
+        System.out.println("DIVISION:"+(num1 / num2));
+        System.out.println("MULTIPLY:"+(num1 * num2));
+        System.out.println("MODULUS:"+(num1 % num2));
+
+    }
+}
