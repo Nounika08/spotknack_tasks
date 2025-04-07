@@ -1,0 +1,21 @@
+import java.time.Year;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    
+
+        Scanner input =new Scanner(System.in);
+        int a;
+        System.out.printf("enter a year");
+        a =input.nextInt();
+        if (a % 4 == 0){
+            System.out.println(a +" IS A LEEP YEAR");
+        }
+        else{
+            System.out.println(a +" IS not a LEEP YEAR");
+
+        }
+
+
+    }
+}
