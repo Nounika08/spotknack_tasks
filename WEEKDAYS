@@ -5,7 +5,6 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int weekday;
         System.out.println("ENTER A NUMBER FROM 1 TO 7 TO KNOW THE PARTICULAR DAY OF THE WEEK");
-
         System.out.println("ENTER A NUMBER FROM 1 TO 7 :");// TO KNOW THE DAY NAME EX.MONDAY->1
         weekday = input.nextInt();
 
