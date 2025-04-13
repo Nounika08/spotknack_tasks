@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter how many numbers you want to find factorial for: ");
+        int count = sc.nextInt();
+
+        int[] numbers = new int[count];
+
+        // Taking input numbers
+        System.out.println("Enter the numbers:");
+        for (int i = 0; i < count; i++) {
+            numbers[i] = sc.nextInt();
+        }
+
+        // Calculating and printing factorial
+        System.out.println("Factorial Output:");
+        for (int num : numbers) {
+            long fact = 1;
+            for (int i = 1; i <= num; i++) {
+                fact *= i;
+            }
+            System.out.print(fact + " ");
+        }
+
+        sc.close();
+    }
+}
