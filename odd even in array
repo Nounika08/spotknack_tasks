@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int n;
+        System.out.println("Enter the number of elements:");
+        n=input.nextInt();
+        int [] arr= new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter the" + "  " +i + " "+ "element:");
+            arr[i]=input.nextInt();
+
+        }
+        
+        int countodd =0;
+        int counteven=0;
+
+
+        for (int j = 0; j < n; j++){
+            if(arr[j]%2==0){
+                countodd +=1;
+            }
+            else{
+                counteven +=1;
+            }
+
+        }
+        System.out.println("The number of odd numbers in the given array:"+ countodd);
+        System.out.println("The number of even numbers in the given array:"+ counteven);
+    }
+}
